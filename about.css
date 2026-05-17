@@ -1,0 +1,244 @@
+.about-page {
+    display: grid;
+    gap: 28px;
+}
+
+.about-brand-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.about-brand-block strong {
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 1.05rem;
+    color: var(--ink-900);
+}
+
+.about-brand-block p {
+    margin: 2px 0 0;
+    color: var(--ink-600);
+    font-size: 0.84rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.page-shell {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(47, 107, 255, 0.08);
+}
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+    align-items: stretch;
+    padding: 26px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(47, 107, 255, 0.06), rgba(58, 139, 255, 0.14));
+    border: 1px solid rgba(47, 107, 255, 0.1);
+    box-shadow: var(--shadow);
+}
+
+.about-vision {
+    justify-content: center;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(47, 107, 255, 0.14), transparent 36%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(243, 248, 255, 0.9));
+    padding: 28px;
+    min-height: 100%;
+    align-content: start;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.about-copy,
+.about-vision,
+.about-panel {
+    display: grid;
+    gap: 14px;
+}
+
+.about-hero h1 {
+    font-family: 'Merriweather', serif;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.08;
+    margin-bottom: 12px;
+}
+
+.about-hero p,
+.about-panel p,
+.team-card p {
+    color: var(--ink-700);
+    line-height: 1.7;
+}
+
+.about-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.mini-label {
+    display: inline-flex;
+    width: fit-content;
+    background: rgba(47, 107, 255, 0.12);
+    color: var(--accent-strong);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.vision-icon-wrap {
+    width: 74px;
+    height: 74px;
+    border-radius: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(47, 107, 255, 0.14), rgba(58, 139, 255, 0.26));
+    border: 1px solid rgba(47, 107, 255, 0.12);
+    box-shadow: 0 12px 28px rgba(47, 107, 255, 0.12);
+}
+
+.vision-icon {
+    font-size: 2rem;
+    color: var(--accent-strong);
+}
+
+.vision-pills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.vision-pills span {
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(47, 107, 255, 0.08);
+    color: var(--accent-strong);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.about-stats,
+.about-details {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stat-card {
+    display: grid;
+    gap: 8px;
+    text-align: left;
+}
+
+.stat-card i,
+.team-icon,
+.policy-card i {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 107, 255, 0.12);
+    color: var(--accent-strong);
+    font-size: 1.1rem;
+}
+
+.about-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.about-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--ink-700);
+}
+
+.about-list i {
+    color: var(--accent-strong);
+    margin-top: 4px;
+}
+
+.about-quote {
+    display: grid;
+    gap: 10px;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(47, 107, 255, 0.08);
+}
+
+.about-quote i {
+    color: var(--accent-strong);
+    font-size: 1.2rem;
+}
+
+.accent-panel {
+    background: linear-gradient(180deg, rgba(31, 79, 217, 0.08), rgba(255, 255, 255, 0.96));
+}
+
+.team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+}
+
+.team-visual {
+    height: 230px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    color: var(--white);
+    font-size: 3rem;
+    box-shadow: 0 18px 32px rgba(15, 28, 45, 0.12);
+}
+
+.team-visual-paint {
+    background: linear-gradient(135deg, #2f6bff, #6fb0ff);
+}
+
+.team-visual-db {
+    background: linear-gradient(135deg, #1f3a6b, #3a8bff);
+}
+
+.team-visual-doc {
+    background: linear-gradient(135deg, #234b87, #4b8fd6);
+}
+
+.team-card {
+    display: grid;
+    gap: 12px;
+    padding: 22px;
+}
+
+.team-icon {
+    margin-bottom: 2px;
+}
+
+.team-card h3 {
+    font-size: 1.1rem;
+}
+
+.team-card p {
+    line-height: 1.75;
+}
+
+@media (max-width: 860px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .team-visual {
+        height: 230px;
+    }
+}
