@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-# Disable conflicting MPMs + enable correct one
+# Disable të gjitha MPM konfliktuese
 RUN a2dismod mpm_event mpm_worker || true \
  && a2enmod mpm_prefork || true
 
